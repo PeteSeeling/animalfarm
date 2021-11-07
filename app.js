@@ -8,35 +8,41 @@ console.log(catSound);
 
 
 const dog = document.getElementById("dog")
-const dogsound = document.getElementById("dogSound")
-dogsound.play();
+const dogSound = document.getElementById("dogSound")
+dogSound.play();
 
 console.log(dog);
-console.log(dogsound)
+console.log(dogSound)
 
 const horse = document.getElementById("horse")
-const horsesound = document.getElementById("horseSound")
+const horseSound = document.getElementById("horseSound")
 
 console.log(horse)
-console.log(horsesound)
+console.log(horseSound)
 
 // initialize global state
 
 // set event listeners 
 
-cat.addEventLister(click,()=>{
-  catSound.play()
-})
+cat.addEventListener('click', () => {
+  catSound.play ();
+  clickedOnEl.textContent = 'cat';
 
-dog.addEventLister(click,()=>{
-  dogSound.play()
-})
+});
 
-horse.addEventLister(click,()=>{
-  horseSound.play()
-})
+dog.addEventListener('click',()=>{
+  dogSound.play();
+
+  clickedOnEl.textContent = 'dog';
+});
+
+horse.addEventListener('click',()=>{
+  horseSound.play();
+  clickedOnEl.textContent = 'horse';
+});
   
 
 // get user input
   // use user input to update state 
+
   // update DOM to reflect the new state

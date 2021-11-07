@@ -111,3 +111,12 @@ footer {
     }
 
   }
+  .textInput{
+      text-align: center;
+
+
+  }
+  img:hover{
+      transform: rotate(15deg);
+      cursor: pointer;
+  }
